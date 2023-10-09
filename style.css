@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #131313;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  gap: 30px;
+  user-select: none;
+}
+
+.green {
+  color: lime;
+  text-shadow: 0px 0px 5px lime;
+}
+.yellow {
+  background-color: orange;
+  box-shadow: 0px 0px 5px orange;
+  text-shadow: 0px 0px 5px black;
+  border-radius: 100%;
+}
+.red {
+  background-color: rgb(204, 67, 42);
+  box-shadow: 0px 0px 5px rgb(204, 67, 42);
+  text-shadow: 0px 0px 5px black;
+  border-radius: 100%;
+}
+
+.attemptdigit {
+  padding: 0px 15px 0px 15px;
+}
+
+.container2 {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  background-color: rgb(7, 7, 7);
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+}
+.attempt {
+  display: flex;
+}
+.attempt {
+  font-size: 50px;
+  gap: 5px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 20px solid rgb(0, 0, 0);
+  border-right: 20px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  padding: 10px 50px 10px 50px;
+  border-radius: 50px;
+  gap: 20px;
+  background-color: rgb(7, 7, 7);
+}
+
+.digits {
+  display: flex;
+}
+
+.digit {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  font-size: 50px;
+}
+.inc,
+.dec {
+  color: white;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  font-size: 50px;
+}
+.inc:hover,
+.dec:hover {
+  cursor: pointer;
+  color: rgb(15, 15, 15);
+  text-shadow: 0px 0px 10px rgb(15, 15, 15);
+}
+.digit:nth-child(1) .num {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.digit:nth-last-child(1) .num {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.num {
+  padding: 30px;
+  border: 2px solid black;
+  background-color: rgb(8, 8, 8);
+  color: white;
+  text-shadow: 0px 0px 5px white;
+  box-shadow: 0px 0px 50px black inset;
+}
+
+#test {
+  padding: 30px;
+  background-color: rgb(8, 8, 8);
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+#test:hover {
+  cursor: pointer;
+}
+
+.menu > * {
+  color: white;
+  font-size: 32px;
+  padding: 10px;
+  background-color: rgb(8, 8, 8);
+  border: 1px solid white;
+}
+.menu > *:hover{
+    cursor: pointer;
+    color: rgb(32, 32, 32);
+}
+
+#message {
+  color: white;
+  font-size: 32px;
+  text-shadow: 3.5px 3.5px black;
+}
+
+#stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: none;
+}
+
+#health {
+  font-size: 45px;
+  color: white;
+  text-shadow: 3.5px 3.5px black;
+}
+
